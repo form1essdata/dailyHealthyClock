@@ -2,7 +2,7 @@
 
 ## 1.脚本代码部分
 
-### 采用python语言，使用selenium库完成脚本自动化。
+### 采用python语言， 使用selenium库完成脚本自动化。
 
 ```python
 import time
@@ -108,7 +108,24 @@ nuadk()
 
 
 
-## 2.服务器部署自动化
+## 2.服务器部署自动化（linux-ubuntu）
 
-### 
+因为校内定时断网等操作，必须将程序稳定运行在可靠环境中。各大厂服务器选择配置最低的即可。
+
+```shell
+crontab -e
+#使用crontab定时运行上述脚本程序
+
+01 0 * * * python /home/daka.py
+#在crontab中写入定时指令
+```
+
+
+
+
+
+```shell
+#服务器每日准时打卡
+#打卡完毕后将数据发送至邮箱
+```
 
